@@ -1,0 +1,80 @@
+body{ 
+	background-color:linen;
+	background-image:url("nightsky.jpg");
+	height: 100%;
+	color:Linen;
+	font-family: Sans-Serif;
+}
+
+.center{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50;
+	height:50;
+}
+
+.name{
+		text-align: center;
+}
+.quote{
+		position: relative;
+		padding: 0 30px;
+		&::before{
+			content:"\201C";
+			position: absolute;
+			font-weight: bold;
+			font-size:4em;
+			color: blue;
+			top: -30px;
+			left: 0px:
+			
+		}
+		&::after{
+			content: "\201D";
+			position: absolute;
+			font-weight: bold;
+			font-size:4em;
+			color: blue;
+			bottom: -50px;
+			right: 0px;
+				
+		}
+}
+h1{
+	color:linen;
+	text-decoration:underline;
+}
+
+h3{
+	text-decoration:underline;
+}
+
+.work-table{
+	border-collapse: collapse;
+	margin: 25px 0;
+	font-size: 0.9em;
+	min-width: 400px;
+	
+}
+
+.work-table th{
+	background-color:#053FE7;
+	text-align: left;
+	font-weight: bold;
+}	
+
+.work-table th,
+.work-table td{
+		padding: 12px 15px;
+}
+
+.work-table tr{
+		border-bottom: 1px solid black;
+}
+.work-table tr:nth-child(even){
+		background-color: #C8A2C8;
+}
+.work-table tr:nth-child(odd){
+		background-color:lightgreen;
+}
